@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <link rel="icon" href="icon.png">
+   <title>Template</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <script src="javascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <div id="content">
+        <div id="right">
+            <h2><span class="word">(Re)thinking </span> Gender Bias in facial recognition</h2>
+
+              <div class="container">
+                <div class="bias gender">
+                  <div class="one ring"><span class="tooltip-text">Gender bias</span></div>
+
+                  <div class="two">
+                    <span class="tooltip-text">Social bias</span>
+                    <div class="ring"></div>
+                    <div class="seven"></div>   
+                  </div>
+                
+                  <div class="three">
+                    <div class="ring"></div>
+                    <div class="four"></div>
+                  </div>
+                
+                  <div class="three slow">
+                    <div class="ring"></div>
+                    <div class="five"></div>
+                  </div>
+                
+                  <div class="three fast">
+                    <span class="tooltip-text">Learning bias</span>
+                    <div class="ring"></div>
+                    <div class="six"></div>
+                </div>
+             </div>
+            </div>
+            <div class="content-legend">
+            <p><span class="dot-gender"></span> Gender Bias</span></p>
+            <p><span class="dot-social"></span> Social Bias</p>
+            <p><span class="dot-human"></span> Human Bias</p>
+            <p><span class="dot-learning"></span> Learning Bias</p>
+            <p><span class="dot-algortim"></span> Algorithm Bias</p>
+            <p><span class="dot-historical"></span> Historical Bias</p>
+            <p><span class="dot-dataset"></span> Dataset Bias</p>
+            </div>
+        </div>
+        <div class="left">
+            <p><span class="title">Summary: </span>“Machine learning (ML) is a type of artificial intelligence technology that relies on vast datasets for training. ML is currently being use in various systems for automated decision making.” <span class="legend">[1]</span>
+            “The limitations of AI are generally perceived today thanks to the discourse on bias (…)  ‘the employment of new technologies that reflect and reproduce existing inequalities but that are promoted and perceived as more objective or progressive than the discriminatory systems of a previous era.” <span class="legend">[2]</span>
+            “A historical data set of successful applicants will essentially be a male-dominated data set,” “To give women equal opportunity in these areas, we need to look at how to de-bias the systems.” <span class="legend">[3]</span>
+            <p><span class="title">Purpose: </span>Promote critical reflection on the impact of gender bias and how the development of artificial intelligence systems based on past social and cultural prejudices affects the society today. By increasing awareness of this issue, the aim is to encourage reconsideration of more ethical and inclusive technologies.</p>
+            <p><span class="title">Objectives: </span>Deconstruct gender bias by analyzing how social context influences machine learning and its impact on society.Identify relevant projects, debates, and quotes and relate them to social, algorithmic, and gender bias to promote discussion on the topic.Develop an interface that exposes the learning of algorithms based on past prejudices that promote gender discrimination, allowing for critical reflection on the machine learning process and its implications on society.</p>
+            <p> <span class="title">Methodology: </span>Define, group, and relate relevant content such as projects, debates, quotes, and others, with social, algorithmic, and gender bias. Develop a facial recognition interface that highlights gender bias and promotes gender equality awareness. Create a diagram that presents the various layers of gender bias in facial recognition, as well as its relationship with social and algorithmic bias.</p>
+            <p><span class="title">Expected Results: </span> This project aims to stimulate reflection on the presence of bias in algorithms and promote the construction of more gender-equal algorithms, intending to contribute to the creation of a fair and equitable society.
+            </p>
+        </div>
+    </div>
+
+<script>
+    function typeWriter(elemento){
+        const textArray = elemento.innerHTML.split('');
+        elemento.innerHTML = '';
+        textArray.forEach((letra, i) => {
+            setTimeout(function(){
+                elemento.innerHTML += letra;
+            }, 100 * i)
+        })
+    }
+
+    const title = document.querySelector('.word');
+    typeWriter(title);
+</script> 
+
+<script type="text/javascript">
+    var $el = $(".left");
+    function anim() {
+    var st = $el.scrollTop();
+    var sb = $el.prop("scrollHeight")-$el.innerHeight();
+    $el.animate({scrollTop: st<sb/2 ? sb : 0}, 5000, anim);
+    }
+    
+    function stop(){
+      $el.stop();
+    }
+    anim();
+    $el.hover(stop, anim);
+</script>
+
+</body>
+</html>

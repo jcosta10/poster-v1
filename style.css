@@ -1,0 +1,458 @@
+
+* {box-sizing: border-box}
+
+body {
+    background: #f4f3ee;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2{
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    padding: 20px 40px;
+    color: #FF477E;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+p {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding: 5px 50px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    color: #222;
+    
+}
+
+.title{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    color: #999;   
+}
+
+.legend{
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    color: #222;   
+}
+
+#content, html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.content-legend{
+    position: relative;
+    bottom: 500px;
+
+}
+
+
+.dot-gender{
+    height: 10px;
+    width: 10px;
+    background-color: #FF7096;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 10;
+}
+
+.dot-social{
+    height: 10px;
+    width: 10px;
+    background-color: #FF7096;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 10;
+}
+
+.dot-human{
+    height: 10px;
+    width: 10px;
+    background-color: #FF85A1;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 10;
+}
+
+.dot-learning{
+    height: 10px;
+    width: 10px;
+    background-color: #FF99AC;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 10;
+}
+.dot-algortim{
+    height: 10px;
+    width: 10px;
+    background-color: #FBB1BD;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 10;
+}
+.dot-historical{
+    height: 10px;
+    width: 10px;
+    background-color: #F9BEC7;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 10;
+}
+
+.dot-dataset{
+    height: 10px;
+    width: 10px;
+    background-color: #F7CAD0;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 10;
+}
+
+
+#right {
+    float: left;
+    width: 70%;
+    height: 100% ;
+    overflow-y: scroll;
+    cursor: url('icon_small.png'), auto;
+    overflow: hidden;
+}
+
+.right::-webkit-scrollbar {
+    width: 3px;
+    height: 1px;
+    border: 0.5px;
+    border-radius: 5px;
+ }
+ 
+ .right::-webkit-scrollbar-thumb {
+    background-color: black
+ 
+ }
+
+.left {
+    float: left;
+    width: 30%;
+    height: 100% ;
+    overflow-y: scroll;
+    border-left: 1pt;
+    border-right: 0pt;
+    border-bottom: 0pt;
+    border-top: 0pt;
+    border-style: solid;
+    border-color:black;
+    background-color: white;
+    cursor: url('icon_small_white.png'), auto;
+    scroll-behavior: auto smooth;
+    background: #f4f3ee;
+    
+}
+
+.left::-webkit-scrollbar {
+    width: 3px;
+    height: 1px;
+    border: 0.5px;
+    border-radius: 5px;
+ }
+ 
+ .left::-webkit-scrollbar-thumb {
+    background-color: black
+ 
+ }
+
+
+.bg {
+  background:#000 ;
+  position: fixed;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  width: 540px;
+  margin: 40px auto;
+  text-align: center;
+  height: 800px;
+}
+
+.bias div {
+  display: inline-block;
+  position: absolute;
+  /*box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);*/
+}
+
+.ring {
+  border: 1px dashed rgba(128, 128, 128, 0.4);   
+  transform: rotate(0);    
+  box-shadow: none;
+}
+ 
+.one {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  left: -110px;
+  top: -110px;
+
+}
+
+.two {
+  width: 52px;
+  height: 52px;
+  border-radius: 50px;
+  background: #FF7096;
+  top: 16px;
+  left: -132px;
+  transform-origin: 26px 26px;
+}
+
+.two > .ring {
+  width : 120px;
+  height: 120px;
+  border-radius: 120px;
+  top: -35px;
+  left: -35px;
+}
+
+.three {
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  background: #FF99AC;
+  top: 25px;
+  right: -122px;
+  transform-origin: 15px 15px;  
+}
+
+
+.three > .ring {
+  width : 77px;
+  height: 77px;
+  border-radius: 80px;
+  top: -22px;
+  left: -22px;
+}
+
+.four {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background: #FBB1BD;
+  top: -18px;
+  left: -18px;
+  transform-origin: 8px 8px;
+}
+
+.five {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #F9BEC7;
+  top: -30px;
+  left: -30px;
+  transform-origin: 5px 5px; 
+}
+
+.six {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #F7CAD0;
+  top: -50px;
+  left: -50px;
+  transform-origin: 10px 10px; 
+}
+
+.seven {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: #FF85A1;
+  top: -30px;
+  left: -30px;
+  transform-origin: 15px 15px; 
+}
+
+.slow > .ring {
+  width : 117px;
+  height: 117px;
+  border-radius: 80px;
+  top: -42px;
+  left: -42px;
+}
+
+.fast > .ring {
+  width : 152px;
+  height: 152px;
+  border-radius: 80px;
+  top: -62px;
+  left: -62px;
+}
+
+.gender {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  top: 200px;
+  left: 240px;
+  display: inline-block;
+  position: absolute;
+  background: #FF477E;
+}
+
+        .gender {
+          animation: spin 100s infinite linear; 
+        }  
+
+        .two {
+          animation: spin 50s infinite linear; 
+        }
+
+        .three {
+          animation: spin 70s infinite linear; 
+        }
+
+        .four {
+          animation: spin 50s infinite linear; 
+        }
+
+        .slow {
+          animation: spin 10s infinite linear; 
+        }
+
+        .fast {
+          animation: spin 20s infinite linear; 
+        }
+
+
+        @keyframes spin {  
+        from {  
+          transform: rotate(0deg);  
+        }  
+        to {  
+          transform: rotate(360deg);  
+           }  
+        }
+
+/*Tooltip*/
+
+.one {
+  position: relative;
+  display: inline-block;
+}
+
+.one .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  color: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.one:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.two {
+  position: relative;
+  display: inline-block;
+}
+
+.two .tooltip-text {
+
+  visibility: hidden;
+  width: 120px;
+  color: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.two:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.three{
+  position: relative;
+  display: inline-block;
+}
+
+.three .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  color: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.three:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
